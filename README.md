@@ -1,13 +1,13 @@
 # SNPtax
-##A pipeline to identify SNPs specific for selected taxa
+## A pipeline to identify SNPs specific for selected taxa
 
 This pipeline consists 2 perl-scripts which require bioperl.
 Prank (http://wasabiapp.org/software/prank/) is used to align sequences.
 
-###Requires:
-BioPerl
-Getopt::Std
-Try::Tiny
+### Requires:
+- BioPerl
+- Getopt::Std
+- Try::Tiny
 
 
 Please keep in mind that these tools **DO NOT** use the NCBI taxonomy database or similar, but rather uses a quick and dirty hack.
@@ -18,6 +18,7 @@ and
 Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_Pinidae_Cupressales_Taxaceae_Taxus_Taxus_baccata_
 
 will result in 
+
 Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_
 as the common taxonomy.
 
@@ -40,11 +41,11 @@ Other alignment tools might behave differently, so you'd have to adjust the scre
 
 
 Pipeline:
-1.) run SNPtax_extract_genes_from_gbk.pl on the Genbank files of the taxa of interest to extract genic sequences
-2.) for each gene concatenate all sequence files into one file
-3.) run prank to align the gene sequences
-4.) run SNPtax_process_alignment.pl to process the alignment files
-5.) browse/screen the output files for the taxa of your interest
+- 1.) run SNPtax_extract_genes_from_gbk.pl on the Genbank files of the taxa of interest to extract genic sequences
+- 2.) for each gene concatenate all sequence files into one file
+- 3.) run prank to align the gene sequences
+- 4.) run SNPtax_process_alignment.pl to process the alignment files
+- 5.) browse/screen the output files for the taxa of your interest
 
 
 
