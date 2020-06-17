@@ -10,7 +10,7 @@ Prank (http://wasabiapp.org/software/prank/) is used to align sequences.
 - Try::Tiny
 
 
-Please keep in mind that these tools **DO NOT** use the NCBI taxonomy database or similar, but rather uses a quick and dirty hack.
+Please keep in mind that these tools **DO NOT** use the NCBI taxonomy database or similar, but rather use a quick and dirty hack.
 The last common ancestor is determined simply by string comparison of the taxonomy and taking the longest common prefix of 2 strings.
 For example :
 Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_
@@ -34,7 +34,7 @@ Just keep this in mind when browsing/screening the result files for the taxa of 
 
 Another thing to consider:
 for our pipeline we used Prank as alignment tool.
-Prank replaces commata "," with underscores "_".
+In fasta headers Prank replaces commata "," with underscores "_".
 Other alignment tools might behave differently, so you'd have to adjust the screening step later on.
 
 
