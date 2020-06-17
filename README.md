@@ -1,16 +1,16 @@
 # SNPtax
-A pipeline to identify SNPs specific for selected taxa
+##A pipeline to identify SNPs specific for selected taxa
 
 This pipeline consists 2 perl-scripts which require bioperl.
 Prank (http://wasabiapp.org/software/prank/) is used to align sequences.
 
-Requires:
+###Requires:
 BioPerl
 Getopt::Std
 Try::Tiny
 
 
-Please keep in mind that these tools DO NOT use the NCBI taxonomy database or similar, but rather uses a quick and dirty hack.
+Please keep in mind that these tools **DO NOT** use the NCBI taxonomy database or similar, but rather uses a quick and dirty hack.
 The last common ancestor is determined simply by string comparison of the taxonomy and taking the longest common prefix of 2 strings.
 For example :
 Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_
