@@ -15,8 +15,9 @@ sub usage () {
 	3.) *.SNP :  
 	Parameters:
 	-i: input fasta-alignment file
+	-n: minimum number of entries/taxa/species required to continue analysis
 	Example:
-	SNPtax_process_alignment.pl -i petD.fasta
+	SNPtax_process_alignment.pl -i petD.fasta -n 10
   
 EOF
 	exit;
@@ -44,9 +45,10 @@ if ($#ARGV < 1){
 }
 
 my %opts;
-getopts ('i:', \%opts) or usage();
+getopts ('i:n:', \%opts) or usage();
 
 my $infile = $opts{i};
+my $min_number = $opts{n};
 my $ali_in = Bio::AlignIO->new('-file' => $infile , '-format' => 'fasta');
 
 my $organism;
@@ -59,7 +61,7 @@ open (TAX,'>',$infile.".used_taxa");# List of taxa present in the alignment (som
 
 my $aln = $ali_in->next_aln();
 
-if ($aln->num_sequences < 10){#if less than 10 Sequences in Alignment, quit. No point in picking SNPs 
+if ($aln->num_sequences < $min_number){#if less than $min_number ( -n parameter) Sequences in Alignment, quit. No point in picking SNPs 
             
 close (SNP);
 close (SNP2);
