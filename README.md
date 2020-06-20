@@ -61,7 +61,7 @@ Pipeline:
 
 A batch script couold look something like this:
 
-
+```
 #!/bin/bash
 
 #1.) Extract gene sequences from all Genbank files in this folder
