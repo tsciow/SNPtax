@@ -37,7 +37,8 @@ for our pipeline we used Prank as alignment tool.
 In fasta headers Prank replaces commata "," with underscores "_".
 Other alignment tools might behave differently, so you'd have to adjust the screening step later on.
 
-
+The positions in the alignments are given as absolute positions and as relative postitions realtive to two refernece-species.
+These reference species are hard-coded in the script and need to be changed there. Don't forget the terminal delimiter (in our case with prank aligner the terminal underscore _ , for example "Helicobacter_pylorii_").
 
 
 Pipeline:
