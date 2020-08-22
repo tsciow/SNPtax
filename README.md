@@ -23,10 +23,12 @@ Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_
 as the common taxonomy.
 
 This can lead to some strange artefacts, for example
-eudicotyledons,Gunneridae,Pentapetalae,rosids,malvids,Malvales,Malvaceae,Bombacoideae,Bombax,Bombax_ceiba,
-eudicotyledons,Gunneridae,Pentapetalae,rosids,malvids,Myrtales,Myrtaceae,Myrtoideae,Eucalypteae,Eucalyptus,Eucalyptus_grandis,
+- eudicotyledons,Gunneridae,Pentapetalae,rosids,malvids,Malvales,Malvaceae,Bombacoideae,Bombax,Bombax_ceiba,
+- eudicotyledons,Gunneridae,Pentapetalae,rosids,malvids,Myrtales,Myrtaceae,Myrtoideae,Eucalypteae,Eucalyptus,Eucalyptus_grandis,
+
 will result in 
-eudicotyledons,Gunneridae,Pentapetalae,rosids,malvids,Myrtales,M
+- eudicotyledons,Gunneridae,Pentapetalae,rosids,malvids,Myrtales,M
+
 obviously not the real last common ancestor but the common prefix of the two taxonomy strings
 
 Just keep this in mind when browsing/screening the result files for the taxa of your interest!
