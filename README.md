@@ -47,7 +47,20 @@ INPUT: a (organellar) genome in Genbank format
 OUTPUT: several single-entry fasta files, one for each annotated gene from the Genbank-input
 OUTPUT to STDOUT: a list of all genes annotated in the Genbank-input
 
-###
+
+###SNPtax_process_alignment.pl
+INPUT: a multiple alignment file in fasta format
+OUTPUT: 3 files:
+        *.used_taxa: a file listing all taxa present in the alignemnt file
+        *.SNP2: contains, for each position (absolute) in the alignment, the bases occuring at that position and the "last common ancestor" carrying given base
+        *.SNP: The most interesting output file: lists all positions with a taxon-specific base together with the taxon this base is specific for.
+                Screening this file for our taxa of interest will give us a list of taxon-specific SNPs
+                
+
+##Example
+LEt's assume we have two chloroplast-genomes
+
+
 
 Pipeline:
 - 1.) run SNPtax_extract_genes_from_gbk.pl on the Genbank files of the taxa of interest to extract genic sequences
