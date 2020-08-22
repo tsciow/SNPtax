@@ -79,7 +79,8 @@ Pipeline:
           - when screening these for taxa of interest, don't forget the terminal underscore character _
             for example: grep -P "Fagaceae_\t" atpA__.prankalignment.fasta
             
-            
+  
+  
 
 A batch script couold look something like this:
 
