@@ -13,13 +13,13 @@ Prank (http://wasabiapp.org/software/prank/) is used to align sequences.
 Please keep in mind that these tools **DO NOT** use the NCBI taxonomy database or similar, but rather use a quick and dirty hack.
 The last common ancestor is determined simply by string comparison of the taxonomy and taking the longest common prefix of 2 strings.
 For example :
-Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_
+- Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_
 and
-Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_Pinidae_Cupressales_Taxaceae_Taxus_Taxus_baccata_
+- Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_Pinidae_Cupressales_Taxaceae_Taxus_Taxus_baccata_
 
 will result in 
 
-Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_
+- Eukaryota_Viridiplantae_Streptophyta_Embryophyta_Tracheophyta_Spermatophyta_
 as the common taxonomy.
 
 This can lead to some strange artefacts, for example
