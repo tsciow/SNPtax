@@ -57,8 +57,8 @@ These reference species are hard-coded in the script and need to be changed ther
                 Screening this file for our taxa of interest will give us a list of taxon-specific SNPs
                 
 
-##Example
-LEt's assume we have two chloroplast-genomes
+## Example
+Let's assume we have two chloroplast-genomes
 
 
 
