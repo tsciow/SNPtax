@@ -41,6 +41,14 @@ The positions in the alignments are given as absolute positions and as relative 
 These reference species are hard-coded in the script and need to be changed there. Don't forget the terminal delimiter (in our case with prank aligner the terminal underscore _ , for example "Helicobacter_pylorii_").
 
 
+
+###SNPtax_extract_genes_from_gbk.pl
+INPUT: a (organellar) genome in Genbank format
+OUTPUT: several single-entry fasta files, one for each annotated gene from the Genbank-input
+OUTPUT to STDOUT: a list of all genes annotated in the Genbank-input
+
+###
+
 Pipeline:
 - 1.) run SNPtax_extract_genes_from_gbk.pl on the Genbank files of the taxa of interest to extract genic sequences
         - a list of all gene names will be written to STDOUT
