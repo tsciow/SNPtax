@@ -42,13 +42,13 @@ These reference species are hard-coded in the script and need to be changed ther
 
 
 
-###SNPtax_extract_genes_from_gbk.pl
+### SNPtax_extract_genes_from_gbk.pl
 INPUT: a (organellar) genome in Genbank format
 OUTPUT: several single-entry fasta files, one for each annotated gene from the Genbank-input
 OUTPUT to STDOUT: a list of all genes annotated in the Genbank-input
 
 
-###SNPtax_process_alignment.pl
+### SNPtax_process_alignment.pl
 INPUT: a multiple alignment file in fasta format
 OUTPUT: 3 files:
         *.used_taxa: a file listing all taxa present in the alignemnt file
