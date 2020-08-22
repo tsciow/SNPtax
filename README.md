@@ -81,12 +81,12 @@ Pipeline:
 - 5.) browse/screen the output files for the taxa of your interest
         - the SNP files will be the most interesting files
           - when screening these for taxa of interest, don't forget the terminal underscore character _
-            for example: grep -P "Fagaceae_\t" atpA__.prankalignment.fasta
+            for example: grep -P "Fagaceae_\t" atpA__.prankalignment.SNP
             
   
   
 
-A batch script couold look something like this:
+A batch script could look something like this:
 
 ```
 #!/bin/bash
