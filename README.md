@@ -1,7 +1,7 @@
 # SNPtax
 ## A pipeline to identify SNPs specific for selected taxa
 
-This pipeline consists 2 perl-scripts which require bioperl.
+This pipeline consists of 2 perl-scripts which require bioperl.
 Prank (http://wasabiapp.org/software/prank/) is used to align sequences.
 
 ### Requires:
