@@ -95,7 +95,7 @@ This will result in 3 files:
 - psac.aligned.fasta.best.fas.used_taxa
 
 We'll have a closer look at psac.aligned.fasta.best.fas.SNP
-...
+```
 Abs.:18	Populus tremula:18	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Malpighiales_Salicaceae_Saliceae_Populus_Populus_tremula_		A
 Abs.:18	Populus tremula:18	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Fagales_Fagaceae_Fagus_Fagus_		G
 Abs.:21	Populus tremula:21	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Malpighiales_Salicaceae_Saliceae_Populus_Populus_tremula_		C
@@ -131,7 +131,20 @@ Abs.:237	Populus tremula:237	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyl
 Abs.:237	Populus tremula:237	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Fagales_Fagaceae_Fagus_Fagus_		C
 Abs.:245	Populus tremula:245	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Malpighiales_Salicaceae_Saliceae_Populus_Populus_tremula_		A
 Abs.:245	Populus tremula:245	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Fagales_Fagaceae_Fagus_Fagus_		G
-...
+```
+
+By using the grep command we can screen psac.aligned.fasta.best.fas.SNP for the taxa of our interest:
+- For SNPs common and specific to all Fagus species we'd use 
+```
+grep -P "Fagus_\t" psac.aligned.fasta.best.fas.SNP
+```
+- For SNPs specific for Fagus sylvatica we'd use 
+```
+grep -P "Fagus_sylvatica_\t" psac.aligned.fasta.best.fas.SNP
+```
+
+
+
 
 
 
