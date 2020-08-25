@@ -144,6 +144,12 @@ grep -P "Fagus_\t" psac.aligned.fasta.best.fas.SNP
 grep -P "Fagus_sylvatica_\t" psac.aligned.fasta.best.fas.SNP
 ```
 
+### Note:
+###	prank aligner replaces , with _
+###	the taxonomy-string always ends with a _
+###	in the SNP files the columns are delimited by a <TAB> ,
+###	so we'll search the SNP files for TaxonOfInterest_<TAB> , for example "Fagaceae_	"
+###	we'll need to use grep with the -P (use perl syntax, so it interprets \t as <TAB>)
 
 
 
