@@ -132,7 +132,8 @@ Abs.:237	Populus tremula:237	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyl
 Abs.:245	Populus tremula:245	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Malpighiales_Salicaceae_Saliceae_Populus_Populus_tremula_		A
 Abs.:245	Populus tremula:245	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyledons_Gunneridae_Pentapetalae_rosids_fabids_Fagales_Fagaceae_Fagus_Fagus_		G
 ```
-
+### Note the tailing underscore followed by a <TAB> followed by the Nucleotide ! We'll use this to screen the result file
+  
 By using the grep command we can screen psac.aligned.fasta.best.fas.SNP for the taxa of our interest:
 - For SNPs common and specific to all Fagus species we'd use 
 ```
