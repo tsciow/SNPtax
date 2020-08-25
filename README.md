@@ -74,6 +74,11 @@ We then run SNPtax_extract_genes_from_gbk.pl on each of these Genbank files:
 - /path/to/SNPtax_extract_genes_from_gbk.pl -i NC_041252.1.gbk
 - /path/to/SNPtax_extract_genes_from_gbk.pl -i NC_041437.1.gbk
 
+This will give us (among many other files) 4 fasta files for the psac-Gene from these 4 genomes
+- psac__Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta,Magnoliophyta,eudicotyledons,Gunneridae,Pentapetalae,rosids,fabids,Fagales,Fagaceae,Fagus,Fagus_crenata,.fna
+- psac__Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta,Magnoliophyta,eudicotyledons,Gunneridae,Pentapetalae,rosids,fabids,Fagales,Fagaceae,Fagus,Fagus_engleriana,.fna
+- psac__Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta,Magnoliophyta,eudicotyledons,Gunneridae,Pentapetalae,rosids,fabids,Fagales,Fagaceae,Fagus,Fagus_sylvatica,.fna
+- psac__Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta,Magnoliophyta,eudicotyledons,Gunneridae,Pentapetalae,rosids,fabids,Malpighiales,Salicaceae,Saliceae,Populus,Populus_tremula,.fna
 
 
 
