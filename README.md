@@ -62,7 +62,18 @@ These reference species are hard-coded in the script and need to be changed ther
                 
 
 ## Example
-Let's assume we have two chloroplast-genomes
+Let's assume we have four chloroplast-genomes:
+- NC_027425.1.gbk  Populus tremula
+- NC_036929.1.gbk  Fagus engleriana
+- NC_041252.1.gbk  Fagus crenata
+- NC_041437.1.gbk  Fagus sylvatica
+
+We then run SNPtax_extract_genes_from_gbk.pl on each of these Genbank files:
+- /path/to/SNPtax_extract_genes_from_gbk.pl -i NC_027425.1.gbk
+- /path/to/SNPtax_extract_genes_from_gbk.pl -i NC_036929.1.gbk
+- /path/to/SNPtax_extract_genes_from_gbk.pl -i NC_041252.1.gbk
+- /path/to/SNPtax_extract_genes_from_gbk.pl -i NC_041437.1.gbk
+
 
 
 
