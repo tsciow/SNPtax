@@ -135,11 +135,11 @@ Abs.:245	Populus tremula:245	Pinus taeda:1	Spermatophyta_Magnoliophyta_eudicotyl
 ##### Note the tailing underscore followed by a TAB followed by the Nucleotide ! We'll use this to screen the result file
   
 By using the grep command we can screen psac.aligned.fasta.best.fas.SNP for the taxa of our interest:
-- For SNPs common and specific to all Fagus species we'd use 
+- For SNPs common and specific to all Fagus species we'd use (Note the _\t )
 ```
 grep -P "Fagus_\t" psac.aligned.fasta.best.fas.SNP
 ```
-- For SNPs specific for Fagus sylvatica we'd use 
+- For SNPs specific for Fagus sylvatica we'd use (Note the _\t )
 ```
 grep -P "Fagus_sylvatica_\t" psac.aligned.fasta.best.fas.SNP
 ```
